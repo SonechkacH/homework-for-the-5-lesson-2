@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var tasks = [];//создали пустой массив
+    function add_tasks(){//объявили функцию
+        var tasks_list = document.getElementByClassName('current');//получили элемент по названию класса и положили в "tasks_list"
+        console.log(tasks_list.lenght);//вывели в консоль длину "tasks_list"
+        console.log(tasks_list[0].innerHTML);//вывели в консоль первый элемент "tasks_list" в виде строки
+
+        var tasks_list = document.getElementById('current');//получили лемент по id и положиди его в "tasks_list"
+        console.log(tasks_list);//вывели в консоль весь массив
+
+        var arr = document.getElementByTagName('div')//создали переменную "arr" положили в нее полученный по имени тега элемент "div"
+        console.log(arr.length);//вывели в консоль длину переменной "arr";
+        console.log(arr[0])//вывели в консоль первый эемент "arr"
+        var tasks_list = document.getElementByTagName('ol')//получили элемент "ol" по имени тега и положили в переменную "tasks_list"
+        console.log(taskss_list.length)//вывели в консоль длину "tasks_list"
+    }
+    function del(){//создали функцию "del"
+        var tasks_list = document/getElementByClassName('current')//получили по имени класса элемент "current" и положили его в "tasks_list"
+        console.log(tasks_list);//вывели в консоль "tasks_list"
+        tasks_list.removeChild(tasks_list[0])//удалили первый элемент "tasks_list"
+    }
+</script>
+<body>
+    <h1>Текущие задачи</h1>
+    <ol id = "current"></ol>
+    <ol class = "current"></ol>
+    <h1>Завершённые задачи</h1>
+    <ol id = "done"></ol>
+    <div>div</div>
+    
+</body>
+</html>
